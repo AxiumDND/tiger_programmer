@@ -29,11 +29,44 @@ A GUI application for controlling relay systems with FT232H interface.
 3. Import/export data using CSV files
 
 ## Version History
-- v1.0.0 (Initial Release)
-  - Basic relay control functionality
-  - FT232H integration
-  - GUI interface
-  - Logging system
+
+### v1.0.0 (2024-03-19) - Initial Release
+#### Core Features
+- Basic relay control functionality through GUI interface
+- FT232H hardware integration with error handling
+- CSV data import/export capabilities
+- Comprehensive logging system
+
+#### Components
+- `Gui.py`: Main GUI interface with relay controls
+- `relay_control.py`: Core relay control logic
+- `levels_sheet_page.py`: Sheet management interface
+- `program_start.bat`: Application launcher with environment setup
+- `main.py`: Application entry point and initialization
+
+#### Technical Details
+- Python-based implementation
+- Uses Adafruit's FT232H libraries
+- Includes error handling for hardware disconnection
+- Automated logging system for debugging
+
+#### Dependencies
+- pyusb >= 1.0.2
+- pyftdi >= 0.53.3
+- adafruit-blinka >= 8.0.0
+- adafruit-circuitpython-ft232h >= 2.0.0
+
+### Future Versions
+#### Planned for v1.1.0
+- Enhanced error handling
+- Additional hardware support
+- UI improvements
+- Performance optimizations
+
+#### Planned for v1.2.0
+- Extended CSV functionality
+- Additional data export formats
+- User configuration options
 
 ## License
 [Your chosen license]
